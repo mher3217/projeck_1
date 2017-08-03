@@ -23,10 +23,11 @@
 	background:orange;
 }
 .menu ul{
+	float:left;
 	list-style-type:none;
 }
 .menu li{
-	float:left;
+	
 	display:block;
 	border:none;
    	padding: 15px 10px;
