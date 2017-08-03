@@ -17,7 +17,7 @@
 	position:fixed;
 }
 #lupa{
-	
+	float:left;
 }
 #lupa:hover{
 	background:orange;
@@ -26,7 +26,7 @@
 	list-style-type:none;
 }
 .menu li{
-	
+	float:left;
 	display:block;
 	border:none;
     padding: 15px 10px;
