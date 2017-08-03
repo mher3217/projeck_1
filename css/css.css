@@ -16,7 +16,7 @@
 	position:fixed;
 }
 #lupa{
-	margin-left:560px;
+	margin-left:100%;
 }
 #lupa:hover{
 	background:orange;
