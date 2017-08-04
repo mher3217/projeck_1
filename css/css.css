@@ -8,7 +8,7 @@
 	background-size: cover;
 	background-attachment:fixed;
 	margin-bottom:80px;
-		text-align:center;
+	text-align:center;
 }
 .menu{
 	width:100%;
@@ -17,22 +17,18 @@
 	background:white;
 	position:fixed;
 }
-#lupa{
-	float:left;
-}
-#lupa:hover{
-	background:orange;
-}
+/* korox menu */
 .menu ul{
-	
 	list-style-type:none;
 }
 .menu li{
 	float:left;
-	display:block;
 	border:none;
    	padding: 15px 10px;
     	text-align: center;
+}
+.drop_menu{
+	display:none;
 }
 .menu a{
 	text-decoration:none;
@@ -41,6 +37,27 @@
 .menu li:hover{
 	background:#808080;
 }
+.show {
+	display:block;
+}
+.menu_icon{
+	font-size:47px;
+	cursor:pointer;
+	margin-left:50px;
+	float:left;
+	display:block;
+}
+.menu_icon:hover{
+	background:orange;
+}
+#lupa{
+	cursor:pointer;
+	float:left;
+}
+#lupa:hover{
+	background:orange;
+}
+
 #logo{
 	display: inline-block;
 	margin-top:300px;
