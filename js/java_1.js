@@ -1,7 +1,4 @@
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+    document.getElementById("m_1").classList.toggle("show");
 }
