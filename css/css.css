@@ -1,13 +1,6 @@
 .mas_1{
 	float:left;
-	background-image:url("../img/photo_1.jpg");
 	width:100%;
-	height:662px;
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment:fixed;
-	margin-bottom:80px;
 	text-align:center;
 }
 .menu{
@@ -25,7 +18,7 @@
 	float:left;
 	border:none;
    	padding: 15px 10px;
-    	text-align: center;
+    text-align: center;
 }
 .drop_menu{
 	display:none;
@@ -37,10 +30,10 @@
 .menu li:hover{
 	background:#808080;
 }
-.show {
-	display:block;
-}
+
 .menu_icon{
+	border:none;
+	border-radius:25px;
 	font-size:47px;
 	cursor:pointer;
 	margin-left:50px;
@@ -57,18 +50,59 @@
 #lupa:hover{
 	background:orange;
 }
-
-#logo{
+/*#logo{
+	left:30%;
 	display: inline-block;
-	margin-top:300px;
+	margin-top:25%;
 	font-family: "Lato", sans-serif;
 	background:#404040;
 	color:white;
 	padding:15px 10px;
 	letter-spacing:10px;
 	font-size:22px;
+	position:absolute;
+	z-index:2;
+}
+@media screen and (max-width: 760px){
+	#logo{
+		display:none;
+	}
+}*/
+.slyde_show{
+	float:left;
+	width:90%;
+	height:800px;
+	margin-left:5%;
+	position:inherit;
+}
+.slyde_show img{
+	position:absolute;
+	width:90%;
+	height:75%;
+}
+.prev, .next{
+	border:none;
+	border-radius:35px;
+	cursor:pointer;
+	font-size:110%;
+	z-index:2;
+	margin-top:28%;
+	position: absolute;
+}
+.next{
+	right:2%;
+}
+.prev{
+	left:2%;
+}
+.next:hover{
+	background-color:#777777;
+}
+.prev:hover{
+	background-color:#777777;
 }
 .middle{
+	
 	clear:both;
 	width:92%;
 	margin:0 auto;
@@ -449,4 +483,7 @@ input[type=text]{
 }
 #final a:hover{
 	color:blue;
+}
+.show {
+	display:block;
 }
