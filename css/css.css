@@ -124,10 +124,10 @@
 	}
 }
 .next{
-	right:10px;
+	right:2%;
 }
 .prev{
-	left:10px;
+	left:2%;
 }
 @media screen and (max-width: 540px){
 	.next{
