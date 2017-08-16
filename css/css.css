@@ -51,11 +51,11 @@
 #lupa:hover{
 	background:orange;
 }
+
 #logo{
 	left:35%;
-	margin-top:25%;
+	margin-top:300px;
 	letter-spacing:10px;
-
 	position:absolute;
 	z-index:2;
 }
@@ -84,39 +84,68 @@
 		display:block;
 	}
 }
-
 .slyde_show{
+	clear:both;
 	float:left;
 	width:90%;
-	height:800px;
+	height:600px;
 	margin-left:5%;
 	position:inherit;
 }
+
 .slyde_show img{
+	margin:0 auto;
 	position:absolute;
 	width:90%;
-	height:75%;
+	height:580px;
 }
 .prev, .next{
-	border:none;
-	border-radius:35px;
 	cursor:pointer;
 	font-size:110%;
 	z-index:2;
-	margin-top:28%;
+	margin-top:300px;
 	position: absolute;
 }
+@media screen and (max-width: 760px){
+	#logo{
+		display:none;
+	}
+	#hide_icon{
+		display:block;
+	}
+	.slyde_show{
+		height:400px;
+	}
+	.slyde_show img{
+		height:380px;
+	}
+	.prev, .next{
+		margin-top:200px;
+	}
+}
 .next{
-	right:2%;
+	right:10px;
 }
 .prev{
-	left:2%;
+	left:10px;
+}
+@media screen and (max-width: 540px){
+	.next{
+		right:0;
+	}
+	.prev{
+	left:0;
+	}
 }
 .next:hover{
 	background-color:#036A81;
+	border:none;
+	border-radius:35px;
 }
 .prev:hover{
 	background-color:#036A81;
+	border:none;
+	border-radius:35px;
 }
 .middle{
 	
@@ -236,7 +265,6 @@
 }
 .tver h4{
 	color:white;
-	margin-left:10px;
 }	
 .a_1{
 	margin-top:40px;
@@ -244,7 +272,7 @@
 	width:24%;
 }
 .tiv{
-	font-size: 24px!important;
+	font-size: 24px;
 }
 @media screen and (max-width: 600px){
 	.tver{
