@@ -38,3 +38,26 @@ function auto_change(){
 	index ++;
 	setTimeout(auto_change,2000);
 }
+
+function topFunction_1() {
+    document.body.scrollTop = 500; 
+}
+function topFunction_2() {
+    document.body.scrollTop = 1800; 
+}
+function topFunction_3() {
+    document.body.scrollTop = 3000; 
+}
+
+window.onscroll = function(){scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
