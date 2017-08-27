@@ -21,6 +21,7 @@
 	width:100%;
 	text-align:center;
 }
+
 .menu{
 	width:100%;
 	font-family: "Lato", sans-serif;
@@ -38,7 +39,9 @@
    	padding: 15px 10px;
     text-align: center;
 	cursor:pointer;
+	z-index:10;
 }
+
 .drop_menu{
 	display:none;
 }
@@ -54,6 +57,11 @@
 	margin-left:50px;
 	float:left;
 	display:block;
+}
+@media screen and (max-width: 702px){
+	.menu li{
+		width:100%;
+	}
 }
 .menu_icon:hover{
 	background:orange;
@@ -116,7 +124,7 @@
 .prev, .next{
 	cursor:pointer;
 	font-size:110%;
-	z-index:2;
+	z-index:1;
 	margin-top:300px;
 	position: absolute;
 }
@@ -298,9 +306,13 @@
 	}
 }
 .portfolio{
+	  background:#000;
+      font-family:sans-serif;
+      margin:0px;
+      padding:0px;
 	float:left;
-	background-image:url("../img/nkar.jpg");
-	height:400px;
+	/*background-image:url("../img/nkar.jpg");*/
+	
 	width:100%;
 	background-attachment:fixed;
 	background-position:center;
@@ -308,12 +320,18 @@
 	background-size: cover;
 }
 .portfolio h2{
-	text-align:center;
-	margin-top:200px;
+	position:absolute;
+	padding-left:35%;
+	padding-top:25%;
 	font-family: "Lato", sans-serif;
 	color:white;
 	font-size:36px;
 	letter-spacing:5px;
+}
+@media screen and (max-width: 500px){
+	.portfolio  h2{
+		display:none;
+	}
 }
 .my_job{
 	float:left;
