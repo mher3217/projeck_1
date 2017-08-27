@@ -61,3 +61,17 @@ function topFunction(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+    $(document).ready(function() {
+      var videobackground = new $.backgroundVideo($('.portfolio'), {
+        "align": "centerXY",
+        "width": 0,
+        "height": 0,
+        "path": "video/",
+        "filename": "Lake",
+        "types": ["mp4","ogg","webm"],
+        "preload": true,
+        "autoplay": true,
+        "loop": true
+      });
+    });
