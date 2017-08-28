@@ -308,7 +308,7 @@
 
 .portfolio{
 	float:left;
-	/*background-image:url("../img/nkar.jpg");*/
+	background-image:url("../img/nkar.jpg");
 	height:300px;
 	width:100%;
 	background-attachment:fixed;
@@ -348,7 +348,6 @@
     height: 300px !important;
     width: 100%;
     overflow: hidden;
-    background: #000;
 }
 .video-container .poster img {
     width: 100%;
