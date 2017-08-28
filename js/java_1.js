@@ -62,16 +62,56 @@ function topFunction(){
     document.documentElement.scrollTop = 0;
 }
 
-    $(document).ready(function() {
-      var videobackground = new $.backgroundVideo($('.portfolio'), {
-        "align": "centerXY",
-        "width": 0,
-        "height": 0,
-        "path": "video/",
-        "filename": "Lake",
-        "types": ["mp4","ogg","webm"],
-        "preload": true,
-        "autoplay": true,
-        "loop": true
-      });
+	//jQuery is required to run this code
+$( document ).ready(function() {
+
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
     });
+
+});
+
+function scaleVideoContainer() {
+
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+
+}
+
+function initBannerVideoSize(element){
+
+    $(element).each(function(){
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element){
+    var windowWidth = $(window).width(),
+    windowHeight = $(window).height() + 5,
+    videoWidth,
+    videoHeight;
+    // console.log(windowHeight);
+
+    $(element).each(function(){
+        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+        $(this).width(windowWidth);
+
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+}
