@@ -40,13 +40,13 @@ function auto_change(){
 }
 
 function topFunction_1() {
-    document.body.scrollTop = 500; 
+    window.scrollTo(0, 500);
 }
 function topFunction_2() {
-    document.body.scrollTop = 1800; 
+    window.scrollTo(0, 1800);
 }
 function topFunction_3() {
-    document.body.scrollTop = 3000; 
+    window.scrollTo(0, 3000);
 }
 
 window.onscroll = function(){scrollFunction()};
