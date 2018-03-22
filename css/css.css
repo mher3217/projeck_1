@@ -335,9 +335,6 @@
 
 }
 #polina h2{
-	
-
-	
     font-family: "Lato", sans-serif;
     color: #777;
     font-size: 36px;
@@ -346,7 +343,7 @@
 }
 @media screen and (max-width: 500px){
 	#polina  h2{
-		left:10%;
+		padding-left:10%;
 	}
 }
 /*.homepage-hero-module{
