@@ -39,6 +39,9 @@ function auto_change(){
 	setTimeout(auto_change,2000);
 }
 
+function topFunction_0() {
+    window.scrollTo(0, 0);
+}
 function topFunction_1() {
     window.scrollTo(0, 500);
 }
@@ -62,7 +65,7 @@ function topFunction(){
     document.documentElement.scrollTop = 0;
 }
 
-	//jQuery is required to run this code
+/*	//jQuery is required to run this code
 $( document ).ready(function() {
 
     scaleVideoContainer();
@@ -115,3 +118,4 @@ function scaleBannerVideoSize(element){
 
     });
 }
+*/
