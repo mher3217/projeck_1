@@ -326,7 +326,23 @@
 	letter-spacing:5px;
 }
 
-.homepage-hero-module{
+
+#polina video { 
+    width:100%;
+
+}
+#polina h2{
+	
+
+	position: absolute;
+    font-family: "Lato", sans-serif;
+    color: #777;
+    font-size: 36px;
+    letter-spacing: 5px;
+	padding-left:37%;
+}
+
+/*.homepage-hero-module{
 	height:300px !important;
 	width:100% !important;
     border-right: none;
@@ -368,7 +384,7 @@
 .video-container video.fillWidth {
     width: 100%;
 }
-
+*/
 @media screen and (max-width: 500px){
 	.portfolio  h2{
 		display:none;
