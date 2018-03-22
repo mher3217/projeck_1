@@ -14,7 +14,7 @@
 			<nav  class="menu">
 				<p onclick="myFunction()" class="menu_icon"><i class="fa fa-bars" aria-hidden="true"></i></p>
 				<ul id="m_1" class="drop_menu">
-					<li><p>HOME</p></li>
+					<li><p onclick="topFunction_0()">HOME</p></li>
 					<li><p onclick="topFunction_1()"><i class="fa fa-user-o" aria-hidden="true"></i> ABOUT</p></li>
 					<li><p onclick="topFunction_2()"><i class="fa fa-th" aria-hidden="true"></i> PORTFOLIO</p></li>
 					<li><p onclick="topFunction_3()"><i class="fa fa-desktop" aria-hidden="true"></i> CONTACT</p></li>
@@ -29,7 +29,7 @@
 				<a href="">GET STARTED</a>
 			</div>
 			<p onclick="plusIndex(-1)" class="prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></p>
-			<p onclick="plusIndex(1)"" class="next" ><i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+			<p onclick="plusIndex(1)" class="next" ><i class="fa fa-arrow-right" aria-hidden="true"></i></p>
 			<img class="slyder_fade" src="img/slayders_/photo_1.jpg"  alt="Some photo" >
 			<img class="slyder_fade" src="img/slayders_/photo_2.jpg"  alt="Some photo" >	
 			<img class="slyder_fade" src="img/slayders_/photo_3.jpg"  alt="Some photo" >	
@@ -80,19 +80,12 @@
 			<div class="a_1"><h4><span class="tiv">150+</span><br>Meetings</h4></div>
 		</div>
 		
-		<div class="portfolio">				
-			<div class="homepage-hero-module">
-				<div class="video-container">
-					<div class="filter">
-					</div>
-					<video autoplay loop class="fillWidth">
+		<div id="polina"> <!--class="portfolio"-->				
+					<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop> <!--class="fillWidth"--> 
 						<source src="video/Writing-Working.MP4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
 						<source src="video/Writing-Working.WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
 						<source src="video/Writing-Working.Ogg" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
 					</video>
-				</div>
-			</div>
-		
 			<h2>PORTFOLIO</h2>
 		</div>
 		
@@ -169,6 +162,7 @@
 			<a class="icons" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			<p id="final">Powered by <a href="">w3.css</a></p>
 		</footer>
+		<!-- <script src="js/js.js"></script> -->
 		<script src="js/java_1.js">		
 		</script>
 	</body>
